@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Films</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+
+        <!-- HEADER -->
+        <header>
+          <div class="netflixLogo">
+            <a id="logo" href="#home"><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/logo.PNG?raw=true" alt="Logo Image"></a>
+          </div>      
+          <nav class="main-nav">                
+            <a href="#home" id="homeLink">Home</a>
+            <a href="#movies20" id="showTop20">Top 20 Movies</a>
+          
+        
+          </nav>
+           
+        </header>
+        <!-- END OF HEADER -->
+
+
+
+    <div class="container mt-5">
+        
+        <div class="row">
+            <div class="col-md-5" id="movie-search-container">
+                <input type="text" id="movie-search" class="form-control" placeholder="Pretraži filmove po nazivu">
+            </div>
+            
+            <div class="col-md-5">
+                <input type="text" id="person-search" class="form-control" placeholder="Pretraži filmove po glumcu">
+            </div>
+            <div class="col-md-2">
+                <div class="col-md-2 d-flex justify-content-between">
+                    <button id="btn-search" class="btn btn-danger mr-2">Pretraži</button>
+                    
+                </div>
+                
+
+            </div>
+        </div>
+        
+    </div>
+    
+    
+    
+    <div class="container">
+        <h1 class="text-center mt-3 mb-4">Filmovi</h1>
+        <div id="movies-container" class="row">
+            <!-- Kartice sa filmovima će biti ubačene ovdje -->
+        </div>
+    </div>
+
+    <!-- Modal za prikaz detalja o filmu -->
+    <div class="modal fade" id="movie-details-modal" tabindex="-1" role="dialog" aria-labelledby="movie-details-modal-label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="movie-details-modal-label">Detalji filma</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="movie-details-content">
+                    <!-- Ovde će biti prikazani detalji filma -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+     <!-- LINKS -->
+     <section class="link">
+        <div class="logos">
+          <a href="#"><i class="fab fa-facebook-square fa-2x logo"></i></a>
+          <a href="#"><i class="fab fa-instagram fa-2x logo"></i></a>
+          <a href="#"><i class="fab fa-twitter fa-2x logo"></i></a>
+          <a href="#"><i class="fab fa-youtube fa-2x logo"></i></a>
+        </div>
+        <div class="sub-links">
+          <ul>
+            <li><a href="#">Audio and Subtitles</a></li>
+            <li><a href="#">Audio Description</a></li>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Gift Cards</a></li>
+            <li><a href="#">Media Center</a></li>
+            <li><a href="#">Investor Relations</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Legal Notices</a></li>
+            <li><a href="#">Corporate Information</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+      </section>
+      <!-- END OF LINKS -->
+    <footer>
+        <p>Milan Batinović , Ilija Mitar, Karlo Petrović</p>
+        <p>Movie app 2023</p>
+      </footer>
+</div>
+</body>
+</html>
